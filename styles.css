@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;  
+    scroll-behavior: smooth;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 40px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .sticky
+{
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .sticky .logo
+{
+    color: #111;
+}
+header .logo
+{
+    color: #666;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    margin-left: 30px;
+    list-style: none;
+}
+head .navigation li a
+{
+    text-decoration: none;
+    color: #666;
+    margin-left: 30px;
+}
+header .sticky .navigation a 
+{
+    color: #111;
+}
+.navigation a:hover
+{
+    color: #ff0157;
+}
+.navigation .icon 
+{
+    display: none;
+}
+main
+{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+article
+{
+    flex: 2;
+    overflow-y: auto;
+}
+aside
+{
+    flex: 1;
+    overflow-y: auto;
+}
+.team .member {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+  }
+.team
+{
+    position: relative; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.team .container
+{
+    position: relative;
+    width: 48%;
+}
+  .team .member .member-info {
+    position: absolute;
+    top: 85%;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 20px 0;
+    color: #2f4d5a;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    max-height: 95px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .team .member:hover .member-info {
+    max-height: 300px;
+  }
+  
+  .team .member h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2f4d5a;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .team .member h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b1cbd7;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+  .team .member span {
+      font-style: italic;
+    display: block;
+    font-size: 13px;
+  }
+  
+  .team .member .social {
+    margin-top: 15px;
+  }
+  
+  .team .member .social a {
+    transition: color 0.3s;
+    color: #52869d;
+  }
+  
+  .team .member .social a:hover {
+    color: #67b0d1;
+  }
+  
+  .team .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  .team .container .section-title h2
+  {
+      color: #111;
+      font-size: 2em;
+      font-weight: 300;   
+  }
+  .team .container .section-title span
+  {
+      color: #ff0157;
+      font-weight: 700;
+      font-size: 1.5em;
+  }
+  .btn:hover
+{
+    letter-spacing: 6px;
+}
+.page-add {
+	padding-top: -20px;
+	margin-bottom: 92px;
+}
+
+.page-add .page-breadcrumb {
+	padding-top: 0px;
+}
+
+.page-add .page-breadcrumb h2 {
+	color: #1e1e1e;
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.page-add .page-breadcrumb h2 span {
+	color: #B0BCC2;
+}
+
+.page-add .page-breadcrumb a {
+	color: #838383;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+	margin-right: 6px;
+	position: relative;
+}
+
+.page-add .page-breadcrumb a.active {
+	color: #1e1e1e;
+}
+
+.page-add .page-breadcrumb a:last-child:after {
+	display: none;
+}
+
+.page-add .page-breadcrumb a:after {
+	position: absolute;
+	top: 1px;
+	right: -5px;
+	content: "/";
+}
+.product-control {
+	margin-bottom: 53px;
+}
+
+.product-control a {
+	color: #838383;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+	margin-right: 25px;
+}
+
+.product-slider .owl-dots {
+	position: absolute;
+	width: 100%;
+	bottom: 34px;
+	text-align: center;
+}
+
+.product-slider .owl-dots button {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	height: 11px;
+	width: 11px;
+	background: #969d9e;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.product-slider .owl-dots button:last-child {
+	margin-right: 0;
+}
+
+.product-slider .owl-dots button.active {
+	background: #ffffff;
+}
+
+.product-img figure {
+	margin: 0;
+    position: relative;
+    padding: 20px;
+   margin: -30px;
+}
+
+.product-img figure img {
+    min-width: 100%;
+    width: 300px;
+    height: 600px;
+}
+
+.product-img figure .p-status {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	padding: 3px 16px;
+	font-size: 12px;
+	background: #1e1e1e;
+	color: #fff;
+	border-radius: 50px;
+}
+
+.product-content {
+align-items: center;
+padding-left: 30px;
+}
+
+.product-content h2 {
+	color: #1e1e1e;
+	font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.product-content .pc-meta {
+	margin-bottom: 35px;
+}
+
+.product-content .pc-meta h5 {
+	color: #1e1e1e;
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+
+.product-content .pc-meta .rating i {
+	font-size: 20px;
+	color: #FFD200;
+	margin-right: 4px;
+}
+
+.product-content p {
+	color: #838383;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-bottom: 35px;
+}
+
+.product-content .tags {
+	margin-bottom: 52px;
+}
+
+.product-content .tags li {
+	color: #1e1e1e;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 30px;
+	list-style: none;
+}
+
+.product-content .tags li span {
+	color: #838383;
+}
+
+.product-content .product-quantity {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.product-content .product-quantity .pro-qty {
+	height: 56px;
+	width: 173px;
+	border: 2px solid #EEF1F2;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.product-content .product-quantity .pro-qty input {
+	width: 50px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	height: 100%;
+}
+
+.product-content .product-quantity .pro-qty .qtybtn {
+	color: #838383;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	padding: 16px 0;
+}
+
+.product-content .pc-btn {
+	border-color: #D0D7DB;
+	color: #4a4a4a;
+}
+
+.product-content .p-info {
+	margin-top: 75px;
+}
+
+.product-content .p-info li {
+	display: inline-block;
+	list-style: none;
+	color: #1e1e1e;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 28px;
+	cursor: pointer;
+}
+.row
+{
+    position: relative; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position: relative;
+    width: 100%;
+}
+.team
+{
+    position: relative; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.team .container
+{
+    position: relative;
+    width: 100%;
+}
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 5px;
+}
+.copyrightText
+{
+    margin-top: 30px;
+    padding: 20px 40px 20px 40px;
+    border-top: 1px solid rgba(0,0,0, 0.1);
+    text-align: center;
+    font-size: medium;
+}
+.copyrightText p
+{
+    color: #333;
+}
+.copyrightText a
+{
+    color: #ff0157;
+    font-weight: 700;
+    text-decoration: none;
+}
+.copyrightText span
+{
+    color: #666;
+    font-weight: 600;
+}
+img
+{
+    display: flex;
+}
+@media screen and (max-width: 800px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .navigation.responsive {position: relative;}
+    
+    .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+}
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+    body.works_on_smartphone header {
+        display: block;
+        float: none;
+    }
+    header .right {
+        float: none;
+    }
+  }
